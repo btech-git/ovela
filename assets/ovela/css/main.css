@@ -1,0 +1,1223 @@
+html {
+    background: #FFF url("../skins/bg.jpg") no-repeat right bottom;
+}
+
+body {
+    font-family: 'dinregular';
+    font-size: 12px;
+}
+
+.header {
+    height: 100px;
+}
+
+.content {
+    padding-bottom: 60px;
+    padding-top: 20px;
+    position: relative;
+}
+
+.footer {
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #bd9960;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #bd9960;
+    background: #FFF;
+}
+
+.main {
+    max-width: 1024px;
+    min-width: 800px;
+}
+
+/*----------------POPUP------------------*/
+.ui-widget-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+/*---------------------------------------*/
+.logo {
+    float: left;
+    margin-top: 20px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.rightNav {
+    float: right;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+.rightNav .rnSec {
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    border-left: 1px solid #bd9960;
+    padding: 0 10px;
+}
+
+.rightNav .rnSec .hasIcon a {
+    display: block;
+    padding-right: 20px;
+}
+
+.rightNav .rnSec .hasIcon.setting a {
+    background: url("../skins/icon-setting.png") right -25px no-repeat;
+}
+
+.rightNav .rnSec .hasIcon.setting a:hover {
+    background: url("../skins/icon-setting.png") right 3px no-repeat;
+}
+
+.rightNav .rnSec .hasIcon.logout a {
+    background: url("../skins/icon-logout.png") right -25px no-repeat;
+}
+
+.rightNav .rnSec .hasIcon.logout a:hover {
+    background: url("../skins/icon-logout.png") right 4px no-repeat;
+}
+
+.rightNav .rnSec.adminText {
+    color: #9E2C65;
+    font-weight: bold;
+}
+
+.rightNav .rnSec:first-child {
+    border-left: none;
+}
+
+.rightNav .rnSec a {
+    color: #bd9960;
+    font-weight: bold;
+}
+
+.rightNav .rnSec:hover a {
+    color: #9E2C65;
+}
+
+.mainMenu {
+    height: 35px;
+    background: #9D2A64;
+}
+
+.mainMenu ul {
+    padding-top: 1px;
+}
+
+.mainMenu ul li {
+    float: left;
+    border-left: 1px solid #892C5A;
+}
+
+.mainMenu ul li:first-child {
+    border-left: none;
+}
+
+.mainMenu ul li a {
+    display: block;
+    color: #ccc;
+    padding: 0 15px;
+    height: 33px;
+    line-height: 33px;
+    text-transform: uppercase;
+}
+
+.mainMenu ul li:hover,
+.mainMenu ul li.active {
+    background: #892C5A;
+    color: white;
+}
+
+.mainMenu ul li:hover a,
+.mainMenu ul li.active a {
+    /*color: #bd9960;*/
+    color: white;
+}
+
+.mainMenu ul li.homeBtn {
+    padding: 0;
+    width: 33px;
+    height: 33px;
+    background: url("../skins/icon.png") 8px 8px no-repeat;
+}
+
+.mainMenu ul li.homeBtn:hover {
+    /*background: url("../skins/icon.png") 8px -19px no-repeat #FFF;*/
+    background-color: #892C5A;
+}
+
+/*----------LOGIN-------------*/
+
+.loginWrap {
+    position: absolute;
+    /*width: 320px;*/
+    top: 50px;
+    left: 50%;
+    margin-left: -150px;
+    background: #FFFFFF;
+    border: 1px solid #bd9960;
+    box-shadow: 0 1px 10px #CCC;
+}
+
+.loginWrap .loginHead {
+    background: #bd9960;
+    color: #FFF;
+    padding: 0 10px;
+    height: 42px;
+    line-height: 42px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+.loginWrap .loginBody {
+    padding: 15px;
+    background: #FFF;
+}
+
+.loginForm span.required {
+    display: none;
+}
+
+.myForm.loginForm label {
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.myForm.loginForm input[type="text"],
+.myForm.loginForm input[type="password"], .myForm input[type="email"] {
+    width: 200px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.myForm.loginForm .row {
+    margin-bottom: 23px;
+}
+
+/*--------------FORM------------------*/
+.myForm .row {
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+.myForm.tabForm .row {
+    margin-bottom: 5px;
+}
+
+.myForm .row.errorHandle {
+    height: auto;
+}
+
+.myForm .row:last-child {
+    margin-bottom: 0;
+}
+
+.fieldset {
+    background: #fff6e9;
+    border: 1px solid #CCCBCB;
+    padding: 5px;
+}
+
+.span-12.last .fieldset {
+    margin-left: 5px;
+}
+
+.myForm label {
+    width: 120px;
+    display: block;
+    /*height: 24px;*/
+    line-height: 24px;
+    float: left;
+    font-weight: bold;
+    color: #555;
+    font-size: 12px;
+}
+
+.myForm .hasRadio label {
+    width: auto;
+    float: none;
+}
+
+.myForm.aesthetic .firstSection .span-12.last label {
+    width: 190px;
+}
+
+.myForm.aesthetic .field {
+    width: 220px;
+}
+
+.myForm.aesthetic .firstSection .field {
+    width: 200px;
+}
+
+.fieldsetTitle {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.myForm .span-12.last .fieldsetTitle {
+    margin-left: 5px;
+}
+
+.myForm.customer label {
+    width: 180px;
+}
+
+.myForm.aesthetic label {
+    width: 198px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.myForm.aesthetic .forCheckBox label {
+    width: auto;
+    text-align: left;
+}
+
+.myForm.aesthetic .forCheckBox input[type="checkbox"],
+.myForm.aesthetic .forCheckBox input[type="radio"] {
+    float: left;
+    margin: 0;
+    padding: 0;
+    margin-right: 5px;
+    height: 24px;
+    clear: both;
+}
+
+.myForm.aesthetic .lastSection label {
+    text-align: left;
+}
+
+.myForm.aesthetic .lastSection textarea {
+    width: 270px;
+    max-width: 270px;
+    min-width: 270px;
+}
+
+.myForm.customer .span-12.last label {
+    margin-left: 20px;
+}
+
+.myForm.customer .buttons {
+    border-top: 1px solid #CCC;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.myForm input[type="text"],
+.myForm input[type="password"],
+.myForm input[type="email"] {
+    width: 158px;
+    padding: 4px 5px;
+    /*height: 22px;*/
+    /*line-height: 22px;*/
+    border: 1px solid #bd9960;
+    font-family: 'dinregular';
+    font-size: 12px;
+    margin: 0;
+}
+
+.myForm input[type="text"].small,
+.myForm input[type="password"].small,
+.myForm input[type="email"].small {
+    width: 80px !important;
+}
+
+.tableDetailForm input[type="text"],
+.tableDetailForm input[type="password"],
+.tableDetailForm input[type="email"] {
+    width: 70px;
+    text-align: right;
+}
+
+select {
+    padding: 3px 2px;
+    border: 1px solid #bd9960;
+    font-family: 'dinregular';
+    font-size: 12px;
+    margin: 0;
+    margin-top: 1px;
+}
+
+.myForm select {
+    width: 170px;
+    padding: 3px 2px;
+    border: 1px solid #bd9960;
+    font-family: 'dinregular';
+    font-size: 12px;
+    margin: 0;
+}
+
+.myForm textarea {
+    padding: 3px 5px;
+    border: 1px solid #bd9960;
+    margin: 0;
+    width: 320px;
+    max-width: 320px;
+    min-width: 320px;
+    height: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    font-family: 'dinregular';
+    font-size: 12px;
+}
+
+.myForm.customer textarea,
+.myForm.customer input[type="text"],
+.myForm.customer input[type="password"],
+.myForm.customer input[type="email"] {
+    width: 250px;
+    max-width: 250px;
+    min-width: 250px;
+}
+
+.myForm.customer textarea {
+    height: 81px;
+    max-height: 81px;
+    min-height: 81px;
+}
+
+.myForm.customer select {
+    width: 261px;
+}
+
+.myForm.aesthetic textarea {
+    width: 210px;
+    max-width: 210px;
+    min-width: 210px;
+}
+
+.myForm.aesthetic input[type="text"],
+.myForm.aesthetic input[type="password"],
+.myForm.aesthetic input[type="email"] {
+    width: 210px;
+}
+
+.myForm.aesthetic select {
+    width: 222px;
+}
+
+.myForm input[type="text"].error,
+.myForm input[type="password"].error,
+.myForm input[type="email"].error,
+.myForm textarea.error {
+    border: 1px solid red;
+}
+
+.myForm .rememberMe {
+    height: 24px;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+.myForm .rememberMe #LoginForm_rememberMe {
+    float: left;
+    margin: 0;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 5px;
+}
+
+.myForm .rememberMe label {
+    width: auto;
+    height: 24px;
+    line-height: 24px;
+}
+
+.myForm .errorMessage {
+    color: red;
+    height: 20px;
+    line-height: 20px;
+}
+
+.myForm.loginForm .errorMessage {
+    text-align: right;
+    position: absolute;
+    right: 15px;
+}
+
+.myForm.loginForm input[type="button"],
+.myForm.loginForm input[type="reset"],
+.myForm.loginForm input[type="submit"],
+.myForm.loginForm button {
+    padding: 8px 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 0;
+}
+
+.myForm input[type="button"],
+.myForm input[type="reset"],
+.myForm input[type="submit"],
+.myForm button,
+input.button {
+    font-family: arial;
+    font-size: 12px;
+    transition: all ease .2s;
+    background: #bd9960; /* Old browsers */
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    padding: 3px 10px;
+    /*height: 22px;*/
+    /*line-height: 22px;*/
+    /*vertical-align: middle;*/
+}
+
+a.button {
+    font-family: arial;
+    font-size: 12px;
+    transition: all ease .2s;
+    background: #bd9960; /* Old browsers */
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    padding: 2px 10px;
+    height: 22px;
+    line-height: 22px;
+    vertical-align: middle;
+}
+
+.myForm input[type="button"]:hover,
+.myForm input[type="reset"]:hover,
+.myForm input[type="submit"]:hover,
+.myForm button:hover,
+input.button:hover,
+a.button:hover {
+    background: #bca074; /* Old browsers */
+}
+
+a.button {
+    display: block;
+}
+
+.myForm .span-12 {
+    width: 50%;
+    float: left;
+}
+
+.myForm hr {
+    background: #ddd;
+    color: #ddd;
+    clear: both;
+    float: none;
+    width: 100%;
+    height: 1px;
+    margin: 20px 0 10px 0;
+    border: none;
+}
+
+.myForm.tabForm form {
+    float: left;
+    width: 100%;
+}
+
+.myForm.tabForm select#TransactionType {
+    float: left;
+}
+
+.myForm.tabForm .field {
+    float: left;
+    /*width: 330px;*/
+    line-height: 24px;
+}
+
+.myForm.customer .field {
+    float: left;
+    width: 264px;
+    line-height: 24px;
+}
+
+.myForm.customer .roleAccess input[type="checkbox"] {
+    float: left;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.myForm.customer .roleAccess label {
+    width: auto;
+}
+
+.myForm input.btnDelete,
+.btnDelete {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    background: url("../skins/icon.png") no-repeat -31px -89px;
+    transition: none;
+}
+
+.myForm input.btnDelete:hover,
+.btnDelete:hover {
+    background: url("../skins/icon.png") no-repeat 1px -89px;
+}
+
+/*-----------------------------------------*/
+
+.table.addDetail.reportTable td {
+    background: #f5f5f5;
+}
+
+.table.addDetail input[type="text"],
+.table.addDetail input[type="password"],
+.table.addDetail input[type="email"] {
+    width: auto;
+    max-width: none;
+    min-width: inherit;
+    vertical-align: top;
+}
+
+.table.addDetail th {
+    text-align: center;
+    border-bottom: 1px solid #f8efe2;
+    border-right: 1px solid #f8efe2;
+    padding: 8px 3px;
+    font-size: 14px;
+}
+
+.table.role th {
+    padding: 0px 3px;
+    font-size: 13px;
+}
+
+.table.addDetail.child th {
+    padding: 0 3px;
+    background: #f8efe2;
+    color: #333;
+}
+
+.errorSummary {
+    background: #F0DCBE;
+    padding: 10px;
+    margin: 10px 0;
+    line-height: 16px;
+    color: red;
+    border: 1px solid red;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.box {
+    border: 1px solid #f8efe2;
+    background: #fbf9f6;
+}
+
+.box.schedule {
+    float: left;
+    width: 60%;
+}
+
+.box .BTitle {
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #9e2c65;
+}
+
+.box.announcement {
+    float: right;
+    width: 37.5%;
+}
+
+.box.announcement .annBox {
+    height: 211px;
+    background: #FFFFFF;
+    margin: 0 10px 10px 10px;
+}
+
+/*--------------------TABLE DETAIL VIEW----------------*/
+
+table.detail-view {
+    width: 100%;
+    border: 1px solid #f8efe2;
+}
+
+table.detail-view,
+table.detail-view th,
+table.detail-view td {
+    border-collapse: collapse;
+}
+
+table.detail-view th,
+table.detail-view td {
+    background: #FFF;
+    line-height: 26px;
+    font-size: 12px;
+    padding: 3px 5px;
+    vertical-align: top;
+}
+
+table.detail-view th {
+    font-weight: bold;
+    border-right: 1px solid #F5F1DC;
+    padding-right: 10px;
+}
+
+table.detail-view td {
+    padding-left: 10px;
+}
+
+table.detail-view tr:nth-child(2n) th,
+table.detail-view tr:nth-child(2n) td {
+    background: #fbf9f6;
+}
+
+/*--------------------TABLE----------------*/
+.table {
+    width: 100%;
+    border: 1px solid #f8efe2;
+}
+
+.table,
+.table th,
+.table td {
+    border-collapse: collapse;
+}
+
+.table th {
+    background: #bd9960;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 8px 10px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.table.tableDetailForm th {
+    text-align: center;
+}
+
+.table td {
+    background: #FFF;
+    /*height: 26px;*/
+    line-height: 26px;
+    font-size: 12px;
+    padding: 3px 5px;
+    vertical-align: top;
+}
+
+.table tr:nth-child(2n) td {
+    background: #fbf9f6;
+}
+
+.table .no {
+    text-align: center;
+}
+
+/*---------------------TAB----------------------*/
+.tab {
+    border: 1px solid #999999;
+}
+
+.tab .tabHead {
+    background: #ccc;
+    color: #FFFFFF;
+    /*height: 30px;*/
+    /*line-height: 30px;*/
+    font-size: 12px;
+}
+
+.tab .tabHead li {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    border-left: 1px solid #fbf9f6;
+}
+
+.tab .tabHead li:first-child {
+    border-left: none;
+}
+
+.tab.reportTab .tabHead li {
+    height: auto;
+    line-height: 15px;
+    width: 94.9px;
+}
+
+.tab.reportTab .tabHead li:first-child {
+    /*width: 106.5px;*/
+}
+
+.tab.treatmentTab .tabHead li {
+    width: 136px;
+    border-bottom: 1px solid #fbf9f6;
+}
+
+.tab.treatmentTab .tabHead li:nth-child(8) {
+    border-left: none;
+}
+
+.tab.treatmentTab .tabHead li>a {
+    padding: 0 5px;
+    text-align: center;
+}
+
+.tab .tabHead li>a {
+    color: #333;
+    display: block;
+    padding: 0 12px;
+    text-transform: uppercase;
+}
+
+.tab.reportTab .tabHead li>a {
+    padding: 5px 10px;
+    height: 55px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.tab .tabHead li>a:hover {
+    background: #999;
+    color: white;
+}
+
+.tab .tabHead li.active>a {
+    background: #fbf9f6;
+    color: #9D2A64;
+    /*font-weight: bold;*/
+}
+
+.tab .tabBody {
+    background: #fbf9f6;
+    min-height: 100px;
+    padding: 15px;
+}
+
+.payInfo, .section {
+    background: #f8efe2;
+    margin: 10px 1px;
+    border: 1px solid #CCCBCB;
+    padding: 10px;
+}
+
+.payInfo .piLabel {
+    width: 120px;
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    float: left;
+    font-weight: bold;
+    color: #333;
+    font-size: 12px;
+}
+
+.payInfo.accounting .piLabel {
+    width: 150px;
+}
+
+.payInfo.accounting .piField {
+    width: 120px;
+}
+
+.payInfo .piField {
+    display: block;
+    float: left;
+    width: auto;
+    line-height: 24px;
+}
+
+.myForm .payInfo input[type="text"],
+.myForm .payInfo input[type="password"],
+.myForm .payInfo input[type="email"] {
+    width: 100px;
+    max-width: 100px;
+    min-width: 100px;
+}
+
+.myForm .payInfo select {
+    width: auto;
+}
+
+.link {
+    float: left;
+    margin-bottom: 5px;
+}
+
+.link a.button {
+    font-size: 12px;
+    transition: all ease .2s;
+    background: #bd9960;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    padding: 0px 10px;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    margin-left: 1px;
+    margin-top: 8px;
+    float: left;
+    margin-right: 5px;
+}
+
+.reportHeader {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.reportHeader .r_date {
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.reportDisplay {
+    position: absolute;
+    right: 0;
+    top: 45px;
+}
+
+.pagination {
+    float: right;
+    margin-top: 10px;
+}
+
+fieldset {
+    border: 1px solid #CCC;
+    padding: 10px;
+}
+
+fieldset legend {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.roomBox {
+    width: 33.33%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.roomBox .rbCont {
+    border: 1px solid #9E2C65;
+}
+
+.roomBox:nth-child(3n+2) .rbCont {
+    margin: 0 10px;
+
+}
+
+.roomBox .rbCont .rbHead {
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: #9D2A64;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.roomBox .rbCont .rbBody {
+    padding: 15px;
+    text-align: center;
+    height: 115px;
+}
+
+.roomBox .remainingTime {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #9D2A64;
+}
+
+.roomBox select {
+    padding: 2px;
+    border: 1px solid #bd9960;
+    font-family: 'dinregular';
+    font-size: 12px;
+    margin: 0;
+    width: 190px;
+}
+
+.roomBox .startButton {
+    width: 190px;
+    background: #bca074;
+    height: 32px;
+    line-height: 32px;
+    color: #FFF;
+    margin-left: 43px;
+    cursor: pointer;
+}
+
+.roomBox:nth-child(3n+2) .startButton {
+    margin-left: 32px;
+}
+
+.roomBox .startButton:hover {
+    background: #bd9960;
+}
+
+.roomBox .errorMsg {
+    display: none;
+}
+
+.btnArea {
+    margin-top: 10px;
+    float: right;
+}
+
+.btnArea .button {
+    float: left;
+    margin-left: 5px;
+}
+
+.btnArea .button:first-child {
+    margin-left: 0;
+}
+
+.boxImage {
+    text-align: center;
+    margin-top: 5px;
+    border: 1px solid #EEE;
+    padding: 10px;
+    background: #FFF;
+}
+
+.separator {
+    height: 1px;
+    width: 100%;
+    background: #CCC;
+}
+
+.tableImgEdit {
+    width: 100%;
+}
+
+.tableImgEdit th,
+.tableImgEdit td {
+    border: 1px solid #CCC;
+    padding: 5px;
+    vertical-align: top;
+}
+
+.tableImgEdit th {
+    font-weight: bold;
+    background: #EEE;
+}
+
+/*=================REPORT PRINT=====================*/
+.reportLayout {
+    color: #333;
+    background: #FFF;
+    padding: 15px;
+    border: 1px solid #888;
+}
+
+.reportLayout .rHeader {
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #333;
+}
+
+.reportLayout .rColumn {
+    margin: 15px 0;
+}
+
+.reportLayout .rW50 {
+    float: left;
+    width: 50%;
+}
+
+.reportLayout .rW25 {
+    float: left;
+    width: 25%;
+}
+
+.rTableCol {
+    width: 100%;
+}
+
+.rTableCol td {
+    padding: 3px;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: justify;
+}
+
+.reportLayout .rSignature {
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+}
+
+.reportLayout .rSignature .rSigHead {
+    margin-bottom: 50px;
+}
+
+.tablePrint {
+    width: 100%;
+}
+
+.tablePrint th,
+.tablePrint td {
+    border: 1px solid #999;
+    padding: 5px;
+}
+
+.tablePrint th {
+    font-weight: bold;
+    background: #EEE;
+}
+
+/*--------------------OVERRIDE-------------------------*/
+.grid-view table.items th {
+    background: #bd9960;
+    vertical-align: middle;
+}
+
+.grid-view table.items tr.odd {
+    background: #fbf9f6;
+}
+
+.grid-view table.items tr.even {
+    background: #FFFFFF;
+}
+
+ul.yiiPager .selected a {
+    background: #bd9960;
+    color: #FFFFFF !important;
+}
+
+ul.yiiPager a {
+    color: #bd9960;
+}
+
+ul.yiiPager a:link, ul.yiiPager a:visited {
+    border: solid 1px #bd9960;
+    color: #bd9960;
+    padding: 3px 6px;
+}
+
+.grid-view .pager {
+    margin-top: 15px;
+}
+
+.grid-view table.items th {
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+    padding: 3px;
+}
+
+.grid-view table.items td {
+    border: none;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    padding: 3px 10px;
+}
+
+.grid-view table.items th a {
+    font-weight: normal;
+}
+
+.grid-view table.items {
+    border: 1px solid #bd9960;
+    margin-top: 10px;
+}
+
+.ui-widget-header {
+    background: #bd9960;
+    color: #FFFFFF;
+    border: none;
+}
+
+.grid-view table.items tbody tr:hover {
+    cursor: pointer;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+    border: 1px solid #bd9960;
+    background: #FFF;
+    font-weight: normal;
+    color: #bd9960;
+}
+
+.grid-view .button-column {
+    width: 95px;
+}
+
+.button-column .view img,
+.button-column .update img,
+.button-column .delete img {
+    display: none;
+}
+
+.button-column .view,
+.button-column .update,
+.button-column .delete {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    margin-bottom: -8px;
+}
+
+.button-column .view {
+    margin-right: 10px;
+}
+
+.button-column .delete {
+    margin-left: 10px;
+}
+
+.button-column .view {
+    background: url("../skins/icon.png") no-repeat -30px -152px;
+}
+
+.button-column .view:hover {
+    background: url("../skins/icon.png") no-repeat 1px -152px;
+}
+
+.button-column .update {
+    background: url("../skins/icon.png") no-repeat -30px -123px;
+}
+
+.button-column .update:hover {
+    background: url("../skins/icon.png") no-repeat 2px -123px;
+}
+
+.button-column .delete {
+    background: url("../skins/icon.png") no-repeat -31px -90px;
+}
+
+.button-column .delete:hover {
+    background: url("../skins/icon.png") no-repeat 1px -90px;
+}
+
+.grid-view {
+    padding: 0;
+    margin-top: 15px;
+}
+
+div.memosig {
+    margin: 20px auto;
+    text-align: center;
+}
+#detail_div{
+    margin-bottom: 5px;
+}
